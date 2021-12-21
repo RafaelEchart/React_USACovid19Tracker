@@ -8,7 +8,7 @@
 ## Built With
 
 - React js
-- [Covid API](https://documenter.getpostman.com/view/10831675/SzYZ1eNY#bb5931aa-52c3-4000-ba41-6ed9209556e1)
+- [Covid-19 API](https://documenter.getpostman.com/view/10831675/SzYZ1eNY#bb5931aa-52c3-4000-ba41-6ed9209556e1)
 - Redux
 - Linters: Stylelint and Eslint
 
