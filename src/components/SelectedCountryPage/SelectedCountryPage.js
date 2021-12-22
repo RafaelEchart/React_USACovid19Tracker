@@ -2,8 +2,7 @@ import React from 'react';
 // import { useDispatch } from 'react-redux';
 import SelectedCountryHeader from '../SelectedCountryHeader/SelectedCountryHeader';
 import SelectedCountryBanner from '../SelectedCountryBanner/SelectedCountryBanner';
-import FilterText from '../FilterText/FilterText';
-import StateInfoCard from '../StateInfoCard/StateInfoCard';
+import SelectedCountryInfo from '../SelectedCountryInfo/SelectedCountryInfo';
 import Footer from '../Footer/Footer';
 
 const SelectedCountryPage = () => {
@@ -15,8 +14,8 @@ const SelectedCountryPage = () => {
 
  <SelectedCountryHeader />
  <SelectedCountryBanner/>
- <FilterText/>
- <StateInfoCard/>
+ <SelectedCountryInfo/>
+
  <Footer/>
 
   </React.Fragment>
