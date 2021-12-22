@@ -1,0 +1,57 @@
+.stateCardContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.individualCardContainter {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 250px;
+    
+}
+
+.background-0, .background-3 {
+    background-color: #3a70d0;
+}
+
+.background-1, .background-2 {
+    background-color: #3661b0;
+}
+
+.innerDivAlignment {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    line-height: 17px;
+    margin-bottom: 15px;
+    margin-right: 10px;
+
+}
+
+.innerDivAlignment h2 {
+    margin: 0;
+    font-size: 17px;
+    color: white;
+}
+
+.innerDivAlignment span {
+    color: white;
+    font-size: 12px;
+}
+
+.individualCardContainter img {
+    margin-top: 10px;
+}
+
+.stateCardIcon {
+    color: white;
+    font-size: 20px;
+    position: relative;
+    left: 42%;
+    top: 5%;
+}
