@@ -4,7 +4,6 @@ import SelectedCountryHeader from '../SelectedCountryHeader/SelectedCountryHeade
 import SelectedCountryBanner from '../SelectedCountryBanner/SelectedCountryBanner';
 import FilterText from '../FilterText/FilterText';
 import StateInfoCard from '../StateInfoCard/StateInfoCard';
-import './selectedCountryPage.css';
 import Footer from '../Footer/Footer';
 
 const SelectedCountryPage = () => {

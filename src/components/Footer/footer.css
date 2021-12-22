@@ -1,14 +1,14 @@
 .footerContainer {
-    background-color: #35548b;
-    color: white;
+  background-color: #35548b;
+  color: white;
 }
 
 .footerContainer span {
-    margin-left: 5px;
-    font-size: 12px;
+  margin-left: 5px;
+  font-size: 12px;
 }
 
-.footerContainer a{
-    text-decoration: underline;
-    color: white;
+.footerContainer a {
+  text-decoration: underline;
+  color: white;
 }

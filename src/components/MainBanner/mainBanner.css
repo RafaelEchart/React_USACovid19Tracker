@@ -1,29 +1,30 @@
 .mainBannerContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #5687e4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #5687e4;
 }
 
 .mainBannerContainer img {
-    width: 120px;
-    margin: 20px;
-    max-width: 250px;
+  width: 120px;
+  margin: 20px;
+  max-width: 250px;
 }
 
 .mainBannerTitle {
-    margin: 0;
-    font-size: 16px;
-    color: white;
-    font-family: 'Lato', sans-serif;
-    font-weight: 900;
+  margin: 0;
+  font-size: 16px;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
 }
 
 .mainBannerTextContainer {
-    line-height: 15px;
+  line-height: 15px;
 }
+
 .mainBannerCases {
-    color: white;
-    font-size: small;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: white;
+  font-size: small;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }

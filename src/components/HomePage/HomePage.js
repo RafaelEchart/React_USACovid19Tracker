@@ -4,7 +4,6 @@ import HomePageHeader from '../HomePageHeader/HomePageHeader';
 import MainBanner from '../MainBanner/MainBanner';
 import FilterText from '../FilterText/FilterText';
 import StateInfoCard from '../StateInfoCard/StateInfoCard';
-import './homePage.css';
 import Footer from '../Footer/Footer';
 
 const HomePage = () => {
