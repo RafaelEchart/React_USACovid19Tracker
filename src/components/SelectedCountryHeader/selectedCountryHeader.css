@@ -6,14 +6,17 @@
     align-items: center;
   }
   
-  .title {
+  .SelectedCountryTitle {
+    display: flex;
+    align-items: center;
     margin: 10px 15px;
-    font-size: 18px;
+    font-size: 20px;
     color: white;
-    font-weight: 500;
-    font-family: 'gillsans', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
+.SelectedCountryTitle img {
+    margin-right: 10px;
+}
   
   .header_nav a {
     color: blue;
@@ -90,10 +93,18 @@
     top: -5px;
   }
 
-  .search-icons {
+  .heart-icon {
       color: white;
       margin: 0px 15px;
       cursor: pointer;
+      font-size: 20px;
 
   }
 
+  .back-icon {
+    color: white;
+    font-size: 25px;
+    margin: 5px 0px 0px 5px;
+      cursor: pointer;
+
+  }
