@@ -32,15 +32,44 @@ const HomePage = () => {
   }, []);
 
   const handleSearchBar = (input) => {
-    const filteredData = mainUSStates.regions.filter((item) => Object.values(item.name).join('').toLowerCase().includes(input.toLowerCase()));
+    const filteredData = mainUSStates.regions.filter((state) => Object.values(state.name).join('').toLowerCase().includes(input.toLowerCase()));
     setStatesToShow(filteredData);
+  };
+
+  const handleMenu = (state) => {
+    console.log(state);
+    const favoriteList = JSON.parse(localStorage.getItem('favoriteStates'));
+
+    if (favoriteList && favoriteList.length) {
+      if (state) {
+        const newState = [];
+        mainUSStates.regions.forEach((oneState) => {
+          favoriteList.forEach((favState) => {
+            if (oneState.name === favState) {
+              newState.push(oneState);
+            }
+          });
+        });
+        setStatesToShow(newState);
+      } else {
+        setStatesToShow(mainUSStates.regions);
+      }
+    }
+
+    if (!favoriteList) {
+      if (state) {
+        setStatesToShow([]);
+      } else {
+        setStatesToShow(mainUSStates.regions);
+      }
+    }
   };
 
   return (
     <React.Fragment>
       {(statesToShow && mainUSStates !== 'Error') && (
         <React.Fragment>
-          <HomePageHeader handleSearch={handleSearchBar} />
+          <HomePageHeader handleSearch={handleSearchBar} handleMenu={handleMenu} />
           <MainBanner cases={mainUSStates.usacases} />
           <FilterText />
           <StateInfoCard states={statesToShow} />

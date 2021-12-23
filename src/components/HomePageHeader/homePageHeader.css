@@ -91,3 +91,12 @@
   margin: 0 15px;
   cursor: pointer;
 }
+
+.filterBox {
+  display: flex;
+  flex-direction: column;
+}
+
+.favoriteInput {
+  margin-bottom: 15px;
+}

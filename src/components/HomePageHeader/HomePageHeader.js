@@ -1,14 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './homePageHeader.css';
 import { FaSearch } from 'react-icons/fa';
-import { Popover, Input } from 'antd';
+import { Popover, Input, Checkbox } from 'antd';
 
 const HomePageHeader = (props) => {
-  const { handleSearch } = props;
+  const { handleSearch, handleMenu } = props;
+  const [inputState, setInputState] = useState(false);
+
+  const checkboxHandler = (state) => {
+    setInputState(!inputState);
+    handleMenu(state);
+  };
+
   const text = <span>Search States</span>;
   const content = (
-    <div>
-      <Input placeholder="Enter state" onChange={(e) => handleSearch(e.target.value)} />
+    <div className='filterBox'>
+      <Input placeholder="Enter state" className='favoriteInput' disabled={inputState} onChange={(e) => handleSearch(e.target.value)} />
+      <Checkbox onChange={(e) => checkboxHandler(e.target.checked) }>Show only favorites</Checkbox>
     </div>
   );
 

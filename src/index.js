@@ -7,12 +7,10 @@ import App from './App';
 import store from './redux/configureStore';
 
 ReactDOM.render(
-  <React.StrictMode>
     <Provider store={store}>
       <BrowserRouter>
         <App />
       </BrowserRouter>
-    </Provider>
-  </React.StrictMode>,
-  document.getElementById('root'),
+    </Provider>,
+    document.getElementById('root'),
 );
