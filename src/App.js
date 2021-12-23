@@ -2,7 +2,6 @@ import React from 'react';
 import {
   Routes,
   Route,
-  Navigate,
 } from 'react-router-dom';
 import './App.css';
 import 'antd/dist/antd.css';
@@ -14,9 +13,8 @@ function App() {
     <div className="App">
         <div className='contentContainer'>
           <Routes>
-            <Route path="/" element={<Navigate to="/homePage" />} />
-            <Route path="/homePage" element={<HomePage />} />
-            <Route path="/homePage/:idState" element={<SelectedCountryPage />} />
+            <Route path="/" element={<HomePage />} />
+            <Route path="/:idState" element={<SelectedCountryPage />} />
             {/* <Route path="/myProfile" element={<MyProfile />} /> */}
           </Routes>
         </div>
