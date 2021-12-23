@@ -93,7 +93,7 @@
 
 .heart-icon {
   color: white;
-  margin: 0 15px;
+  margin: 5px 15px 0px 0px;
   cursor: pointer;
   font-size: 20px;
 }
@@ -103,4 +103,12 @@
   font-size: 25px;
   margin: 5px 0 0 5px;
   cursor: pointer;
+}
+
+.favorite {
+  color: red
+}
+
+.notfavorite {
+  color: white;
 }
