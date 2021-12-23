@@ -3,11 +3,12 @@ import './homePageHeader.css';
 import { FaSearch } from 'react-icons/fa';
 import { Popover, Input } from 'antd';
 
-const HomePageHeader = () => {
+const HomePageHeader = (props) => {
+  const { handleSearch } = props;
   const text = <span>Search States</span>;
   const content = (
     <div>
-      <Input placeholder="Enter state" />
+      <Input placeholder="Enter state" onChange={(e) => handleSearch(e.target.value)} />
     </div>
   );
 

@@ -16,7 +16,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Navigate to="/homePage" />} />
             <Route path="/homePage" element={<HomePage />} />
-            <Route path="/homePage/:idCountry" element={<SelectedCountryPage />} />
+            <Route path="/homePage/:idState" element={<SelectedCountryPage />} />
             {/* <Route path="/myProfile" element={<MyProfile />} /> */}
           </Routes>
         </div>

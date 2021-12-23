@@ -1,7 +1,4 @@
 .selectedCountryBannerContainer {
-  /* background-image: url('../../assets/alabama.jpg');
-    background-repeat: no-repeat;
-    background-size: 100% 100%; */
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -30,4 +27,8 @@
   color: white;
   font-size: small;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.imgSelectedState {
+  filter: invert(90%) sepia(50%) saturate(1000%) hue-rotate(180deg) brightness(50%) contrast(100%);
 }

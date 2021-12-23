@@ -1,33 +1,54 @@
-import React from 'react';
-// import { useDispatch } from 'react-redux';
+import React, { useState, useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { useParams } from 'react-router-dom';
+import LoadingScreen from '../LoadingScreen/LoadingScreen';
 import SelectedCountryHeader from '../SelectedCountryHeader/SelectedCountryHeader';
 import SelectedCountryBanner from '../SelectedCountryBanner/SelectedCountryBanner';
 import SelectedCountryInfo from '../SelectedCountryInfo/SelectedCountryInfo';
 import Footer from '../Footer/Footer';
+import { fetchGetStates } from '../../redux/main/selectedCountry';
 
 const SelectedCountryPage = () => {
-  const hello = 'hello';
-  console.log(hello);
+  const selectedState = useSelector((state) => state.selectedState);
+  const [infoToShow, setInfoToShow] = useState(undefined);
+  const dispatch = useDispatch();
+  const selectedStateID = useParams().idState;
+
+  useEffect(() => {
+    if (!selectedState) {
+      try {
+        // const todayDate = new Date().toISOString().slice(0, 10);
+        dispatch(fetchGetStates('2021-12-22', 'US', selectedStateID));
+      } catch (err) {
+        setInfoToShow(undefined);
+      }
+    }
+    setInfoToShow(selectedState);
+  }, [selectedState]);
+
   return (
+    <React.Fragment>
+      {(infoToShow && selectedState !== 'Error') && (
+        <React.Fragment>
 
-  <React.Fragment>
+          <SelectedCountryHeader
+          stateName={infoToShow.name}
+          seal={infoToShow.seal}
+          website={infoToShow.website} />
 
- <SelectedCountryHeader />
- <SelectedCountryBanner/>
- <SelectedCountryInfo/>
+          <SelectedCountryBanner
+          stateName={infoToShow.name}
+          population={infoToShow.population}
+          stateMap={infoToShow.map_image} />
 
- <Footer/>
+          <SelectedCountryInfo stateData={infoToShow} />
+          <Footer />
+        </React.Fragment>
+      )}
+      {(!infoToShow || selectedState === 'Error') && <LoadingScreen />}
 
-  </React.Fragment>
-
+    </React.Fragment>
   );
 };
-// const dispatch = useDispatch();
-
-// useEffect(() => {
-//   if (document.readyState !== 'complete') {
-//     dispatch(loadRockets());
-//   }
-// }, []);
 
 export default SelectedCountryPage;

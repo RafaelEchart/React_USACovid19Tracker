@@ -1,31 +1,21 @@
 import React from 'react';
-// import { useDispatch } from 'react-redux';
-import USMAP from '../../assets/US-MAP.png';
-// import { loadRockets } from '../../redux/Rockets/rockets';
 import './selectedCountryBanner.css';
+import USMAP from '../../assets/US-MAP.png';
 
-const SelectedCountryBanner = () => {
-  const hello = 'hello';
-  console.log(hello);
+const SelectedCountryBanner = (props) => {
+  const { stateName, population, stateMap } = props;
 
   return (
 
     <div className='selectedCountryBannerContainer'>
-        <img src={USMAP} className='img'/>
+        <img src={stateMap || USMAP} className='imgSelectedState'/>
         <div className='mainBannerTextContainer'>
-            <h1 className='mainBannerTitle'>ALABAMA</h1>
-            <span className='mainBannerCases'>300 cases confirmed</span>
+            <h1 className='mainBannerTitle'>{stateName}</h1>
+            <span className='mainBannerCases'>Population: {population ? `${population}` : 'N/A'} </span>
         </div>
     </div>
 
   );
 };
-// const dispatch = useDispatch();
-
-// useEffect(() => {
-//   if (document.readyState !== 'complete') {
-//     dispatch(loadRockets());
-//   }
-// }, []);
 
 export default SelectedCountryBanner;
