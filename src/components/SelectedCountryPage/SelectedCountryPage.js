@@ -17,7 +17,6 @@ const SelectedCountryPage = () => {
   useEffect(() => {
     if (!selectedState) {
       try {
-        // const todayDate = new Date().toISOString().slice(0, 10);
         dispatch(fetchGetStates('2021-12-22', 'US', selectedStateID));
       } catch (err) {
         setInfoToShow(undefined);

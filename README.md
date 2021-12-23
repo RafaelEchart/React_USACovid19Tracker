@@ -24,9 +24,11 @@
 
 _Quality of screenshots is lower than the actual APP_
 
-## Live Link
+## Live Link & Video
 
-[Live Link: Netlify](https://deploy-preview-1--adoring-beaver-1b59eb.netlify.app/)
+[Live Link: Netlify](https://61c4e6811a10602f7bb6d5f6--adoring-beaver-1b59eb.netlify.app/)
+
+[Explanation Video](https://drive.google.com/file/d/1Vi0aTf7nqCofh6dNBYaVjJAwL7sCM3mg/view?usp=sharing)
 
 ## Built With
 

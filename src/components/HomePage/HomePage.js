@@ -18,7 +18,6 @@ const HomePage = () => {
   useEffect(() => {
     if (!mainUSStates) {
       try {
-        // const todayDate = new Date().toISOString().slice(0, 10);
         dispatch(fetchGetDataAllStates('2021-12-22', 'US'));
       } catch (err) {
         setStatesToShow(undefined);
@@ -37,7 +36,6 @@ const HomePage = () => {
   };
 
   const handleMenu = (state) => {
-    console.log(state);
     const favoriteList = JSON.parse(localStorage.getItem('favoriteStates'));
 
     if (favoriteList && favoriteList.length) {
@@ -87,12 +85,5 @@ const HomePage = () => {
     </React.Fragment>
   );
 };
-// const dispatch = useDispatch();
-
-// useEffect(() => {
-//   if (document.readyState !== 'complete') {
-//     dispatch(loadRockets());
-//   }
-// }, []);
 
 export default HomePage;
