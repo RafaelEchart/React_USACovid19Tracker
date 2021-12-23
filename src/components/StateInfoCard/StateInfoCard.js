@@ -9,7 +9,7 @@ const StateInfoCard = (props) => {
   return (
     <div className='stateCardContainer'>
       {states.map((state, idx) => (
-          <Link key={state.cases} to={`/homePage/${state.name}`} className={`background-${idx} individualCardContainter`}>
+          <Link key={state.cases} to={`/${state.name}`} className={`background-${idx} individualCardContainter`}>
 
         <BsArrowRightCircle className='stateCardIcon' />
           <img src={state.map_image} width={120} />
