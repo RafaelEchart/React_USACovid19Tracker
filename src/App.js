@@ -2,6 +2,7 @@ import React from 'react';
 import {
   Routes,
   Route,
+  Navigate,
 } from 'react-router-dom';
 import './App.css';
 import 'antd/dist/antd.css';
@@ -15,7 +16,7 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/:idState" element={<SelectedCountryPage />} />
-            {/* <Route path="/myProfile" element={<MyProfile />} /> */}
+            <Route path="*" element={<Navigate to="/" />} />
           </Routes>
         </div>
     </div>

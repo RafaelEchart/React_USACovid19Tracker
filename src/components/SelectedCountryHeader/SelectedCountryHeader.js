@@ -38,7 +38,7 @@ const SelectedCountryHeader = (props) => {
 
   return (
     <header className="header">
-      <Link to='/homePage'>
+      <Link to='/'>
         <IoChevronBack className="back-icon" />
       </Link>
       <a href={website} target='_blank' rel='noreferrer'>
