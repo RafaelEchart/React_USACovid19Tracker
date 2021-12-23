@@ -22,6 +22,8 @@
 </details>
 <br>
 
+_Quality of screenshots is lower than the actual APP_
+
 ## Live Link
 
 [Live Link: Netlify](https://deploy-preview-1--adoring-beaver-1b59eb.netlify.app/)
