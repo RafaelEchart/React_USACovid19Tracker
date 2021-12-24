@@ -97,6 +97,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
+- Thanks to [Nelson Sakwa](https://www.behance.net/sakwadesignstudio) for creating this [amazing layout ⭐️](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs))
 - Rafael Echart
 - Microverse documentation ⭐️
 

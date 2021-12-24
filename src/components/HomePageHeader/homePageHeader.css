@@ -45,11 +45,6 @@
   background-color: #4369b2;
 }
 
-/* .mobileNavBackground:hover {
-      transition-duration: 1s;
-    background-color:#fff;;
-  } */
-
 .header .menu-icon {
   cursor: pointer;
   display: inline-block;
