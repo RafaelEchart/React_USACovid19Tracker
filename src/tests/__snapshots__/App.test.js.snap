@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App component renders as intended App component matches the snapshot 1`] = `
+<div
+  className="App"
+>
+  <div
+    className="contentContainer"
+  >
+    <div
+      className="loadingCover"
+    >
+      <img
+        src="american_flag.gif"
+      />
+      <div
+        className="ant-spin ant-spin-lg ant-spin-spinning"
+      >
+        <span
+          className="ant-spin-dot ant-spin-dot-spin"
+        >
+          <i
+            className="ant-spin-dot-item"
+          />
+          <i
+            className="ant-spin-dot-item"
+          />
+          <i
+            className="ant-spin-dot-item"
+          />
+          <i
+            className="ant-spin-dot-item"
+          />
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;

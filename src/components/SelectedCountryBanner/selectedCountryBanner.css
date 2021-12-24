@@ -1,0 +1,34 @@
+.selectedCountryBannerContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #5687e4;
+}
+
+.selectedCountryBannerContainer img {
+  width: 120px;
+  margin: 20px;
+  max-width: 250px;
+}
+
+.mainBannerTitle {
+  margin: 0;
+  font-size: 16px;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+}
+
+.mainBannerTextContainer {
+  line-height: 15px;
+}
+
+.mainBannerCases {
+  color: white;
+  font-size: small;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.imgSelectedState {
+  filter: invert(90%) sepia(50%) saturate(1000%) hue-rotate(180deg) brightness(50%) contrast(100%);
+}

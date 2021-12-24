@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer renders as required Footer UI matches the snapshot 1`] = `
+<div
+  className="footerContainer"
+>
+  <span>
+    Data fetched from 
+    <a
+      href="https://covid19tracking.narrativa.com/index_en.html"
+      rel="noreferrer"
+      target="_blank"
+    >
+      Narrativa API
+    </a>
+     
+  </span>
+</div>
+`;

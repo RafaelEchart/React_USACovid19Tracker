@@ -1,0 +1,110 @@
+.stateCardContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.individualCardContainter {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 250px;
+}
+
+.innerDivAlignment {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  line-height: 17px;
+  margin-bottom: 15px;
+  margin-right: 10px;
+  text-align: end;
+}
+
+.innerDivAlignment h2 {
+  margin: 0;
+  font-size: 17px;
+  color: white;
+}
+
+.innerDivAlignment span {
+  color: white;
+  font-size: 12px;
+}
+
+.individualCardContainter img {
+  margin-top: 10px;
+  filter: invert(90%) sepia(50%) saturate(1000%) hue-rotate(180deg) brightness(50%) contrast(100%);
+}
+
+.stateCardIcon {
+  color: white;
+  font-size: 20px;
+  position: relative;
+  left: 42%;
+  top: 5%;
+}
+
+.background-1,
+.background-2,
+.background-5,
+.background-6,
+.background-9,
+.background-10,
+.background-13,
+.background-14,
+.background-17,
+.background-18,
+.background-21,
+.background-22,
+.background-25,
+.background-26,
+.background-29,
+.background-30,
+.background-33,
+.background-34,
+.background-37,
+.background-38,
+.background-41,
+.background-42,
+.background-45,
+.background-46,
+.background-49,
+.background-50,
+.background-53,
+.background-54 {
+  background-color: #3661b0;
+}
+
+.background-0,
+.background-3,
+.background-4,
+.background-7,
+.background-8,
+.background-11,
+.background-12,
+.background-15,
+.background-16,
+.background-19,
+.background-20,
+.background-23,
+.background-24,
+.background-27,
+.background-28,
+.background-31,
+.background-32,
+.background-35,
+.background-36,
+.background-39,
+.background-40,
+.background-43,
+.background-44,
+.background-47,
+.background-48,
+.background-51,
+.background-52,
+.background-55 {
+  background-color: #3a70d0;
+}

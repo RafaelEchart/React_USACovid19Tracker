@@ -2,14 +2,42 @@
 
 # React.js USA Covid-19 Tracker
 
-> This project is in progress.   
+> This application allows the public to keep track of the stadistics of the Covid-19 Pandemic in the United Stated. You will be able to have favorite states to find them more easily using the 🔍 search filter.   
 
+
+![screenshot](./src/assets/app_1.gif)
+
+
+
+<br>
+<details>
+<summary>More Screenshots</summary>
+<br>
+
+## 📋 Search Filter
+<img width="430" alt="portfolio_view" src="./src/assets/app_2.gif">
+
+
+
+</details>
+<br>
+
+_Quality of screenshots is lower than the actual APP_
+
+## Live Link & Video
+
+[Live Link: Netlify](https://61c4e6811a10602f7bb6d5f6--adoring-beaver-1b59eb.netlify.app/)
+
+[Explanation Video](https://drive.google.com/file/d/1Vi0aTf7nqCofh6dNBYaVjJAwL7sCM3mg/view?usp=sharing)
 
 ## Built With
 
 - React js
-- [Covid-19 API](https://documenter.getpostman.com/view/10831675/SzYZ1eNY#bb5931aa-52c3-4000-ba41-6ed9209556e1)
 - Redux
+- [Covid-19 API](https://documenter.getpostman.com/view/10831675/SzYZ1eNY#bb5931aa-52c3-4000-ba41-6ed9209556e1)
+- [Civil Service USA](https://github.com/CivilServiceUSA/us-states)
+- Ant Design
+- React-icons
 - Linters: Stylelint and Eslint
 
 
@@ -69,6 +97,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
+- Thanks to [Nelson Sakwa](https://www.behance.net/sakwadesignstudio) for creating this [amazing layout ⭐️](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs))
 - Rafael Echart
 - Microverse documentation ⭐️
 

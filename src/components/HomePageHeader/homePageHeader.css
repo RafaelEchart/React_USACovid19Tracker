@@ -1,0 +1,97 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  background-color: #4369b2;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  margin: 10px 15px;
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+  font-family: 'gillsans', sans-serif;
+}
+
+.header_nav a {
+  color: blue;
+}
+
+.header_logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 10px;
+}
+
+.header_RocketMissions {
+  display: flex;
+  gap: 20px;
+  margin-right: 10px;
+  border-right: 1px solid black;
+  padding-right: 10px;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+.header .menu-btn {
+  display: none;
+}
+
+.mobileNavBackground {
+  background-color: #4369b2;
+}
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  padding: 11px 15px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #fff;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background 0.2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon::before,
+.header .menu-icon .navicon::after {
+  background: #fff;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon::before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon::after {
+  top: -5px;
+}
+
+.search-icons {
+  color: white;
+  margin: 0 15px;
+  cursor: pointer;
+}
+
+.filterBox {
+  display: flex;
+  flex-direction: column;
+}
+
+.favoriteInput {
+  margin-bottom: 15px;
+}
