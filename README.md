@@ -54,8 +54,8 @@ To get a local copy up and running follow these simple example steps.
 
 ### Setup
 
-- git clone https://github.com/RafaelEchart/React-USA-Covid19Tracker.git
-- cd React-USA-Covid19Tracker
+- git clone https://github.com/RafaelEchart/React_USACovid19Tracker.git
+- cd React_USACovid19Tracker
 
 ### Install
 
