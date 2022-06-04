@@ -83,7 +83,7 @@ Inside of your directory run the following commands:
 👤 **Rafael Echart**
 
 - GitHub: [@rafaelechart](https://github.com/rafaelechart)
-- Twitter: [@rafaechart](https://twitter.com/rafaechart)
+- Twitter: [@rafaechart](https://twitter.com/rafaelechart)
 
 
 ## 🤝 Contributing
